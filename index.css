@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    height: 420px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 10px rgb(209, 205, 205);
+    border-radius: 8px;
+    gap: 10px;
+}
+input{
+    height: 30px;
+    outline: none;
+    text-indent: 10px;
+    border: none;
+    background-color: lightgray;
+    color: black;
+}
+h2{
+  margin: 0 auto;
+}
+label{
+    transform: translateY(10px);
+}
+.ball{
+    height: 180px;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.move {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+button {
+    height: 30px;
+    width: 120px;
+    border: none;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: 1px 2px 3px black;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    transition: all 0.5s;
+    box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.5),
+    5px 7px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+/* button::before, button::after {
+    position: absolute;
+    content: '';
+    transition: all 0.5s;
+    background-color: blue;
+}
+button::before {
+    bottom: -25px;
+    height: 25px; 
+    width: 100px;
+    left: 10px; 
+    transform: skewX(45deg);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+} */
+
+/* Bold effect for the right skew */
+/* button::after {
+    right: -25px;
+    height: 25px;
+    bottom: -15px;
+    transform: skewX(45deg);
+    box-shadow: 8px 0 15px rgba(0, 0, 0, 0.5);
+}
+button:active {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+button:active::before {
+    bottom: -15px;
+    height: 15px; 
+    left: 6px;
+}
+button:active::after {
+    right: -15px;
+    height: 15px; 
+    bottom: -10px;
+} */
+
+
+
+@media screen and (max-width: 960px) {
+    form{
+        margin: 50px auto;
+        width: 80%;
+    }
+}
